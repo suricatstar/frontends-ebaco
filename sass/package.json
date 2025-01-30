@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "sass": "sass scss/main.scss:css/styles.css --watch"
+    },
+    "name": "sass",
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "sass": "^1.83.4"
+    }
+}
