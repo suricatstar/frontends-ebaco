@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #535e68;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #9aa7b7;
+  color: #fff;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+  color: #fff;
+}
+
+
+.navbar-toggler {
+  background-color: #9aa7b7;
+}
+
+.section-title {
+  font-family: "Share Tech", sans-serif;
+}
+
+
+#sobre-assistencia, #Componentes {
+  background-color: #2a2b2f;
+  color: #535e68;
+  
+}
+
+.text-colored {
+  color: #7f80b5;
+}
+
+.nav-cardapio .nav-link.active,
+#contato button {
+  background-color: #535e68;
+  color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+  color: #fff;
+}
+
+.social-links li{
+  list-style: none;
+  display: inline;
+}
+
+.social-links a{
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}
