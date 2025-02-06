@@ -1,0 +1,24 @@
+{
+  "name": "ex_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.84.0"
+  }
+}

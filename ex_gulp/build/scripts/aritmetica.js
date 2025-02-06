@@ -1,0 +1,1 @@
+let somar=require("./sum.js");console.log("Somar:",somar(1,2));
