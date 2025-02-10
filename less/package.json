@@ -7,9 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "less": "less-watch-compiler ./src/styles/ ./build/styles/ main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "less": "^4.2.2"
+  "devDependencies": {
+    "less": "^4.2.2",
+    "less-watch-compiler": "^1.16.3"
   }
 }
