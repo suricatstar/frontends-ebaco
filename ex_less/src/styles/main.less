@@ -1,0 +1,126 @@
+@import 'variaveis.less';
+@import 'mapa.less';
+
+@breakpointMob: ~"(max-width: 767px)";
+@breakpointTab: ~"(min-width: 768px) and (max-width: 1023px)";
+
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marginCard{
+    margin: 10px 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @fontSeg;
+}
+
+body{
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #colors[textColor];
+}
+
+header{
+    background-color: #colors[bannerColor];
+    padding: 15px 15px;
+    border-bottom: 8px solid #E6EBE0;
+
+    div{
+       .displayFlex(); 
+       justify-content: space-between;
+
+       li{
+            margin: 0 10px;
+            display: inline;
+            background-color: #colors[buttonColor];
+            padding: 5px;
+            border-radius: 5px;
+
+            &:hover{
+                background-color: #colors[backgroundColor];
+                color: #colors[buttonColor];
+            }
+       }
+    }
+    
+}
+
+section{
+    .container{
+        max-width: 1200px;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+        
+
+       .products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+
+            .product-item{
+                background-color: #colors[backCardColor];
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                width: 300px;
+                text-align: center;
+
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+
+                h2{
+                    font-size: 24px;
+                    .marginCard();
+                }
+
+                p{
+                    font-size: 16px;
+                    .marginCard();
+                }
+            }
+
+            .product-button{
+                background-color: #colors[buttonColor];
+                padding: 5px;
+                border-radius: 5px;
+                border: solid 1px #colors[buttonColor];
+    
+                &:hover{
+                    background-color: #colors[textColor];
+                    color: #colors[backCardColor];
+                }
+            }
+        }
+
+
+        @media @breakpointTab{
+            max-width: 80%;
+        }
+
+        @media @breakpointMob{
+            max-width: 70%;
+        }
+    }
+    
+}
