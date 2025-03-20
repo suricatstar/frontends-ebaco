@@ -9,27 +9,31 @@
     width: 100%;
     margin: 56px auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1%;
 }
 
-.produto {} /* bloco */
+.produto {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-.produto-imagem { /* elemento */
+.produto__imagem {
     width: 100%;
 }
 
-.produto-nome { /* elemento */
+.produto__nome {
     font-size: 1.2em;
     margin: 8px 0;
 }
 
-.produto-descricao { /* elemento */
+.produto__descricao {
     color: gray;
 }
 
-.em-destaque { /* modificador */
+.produto--em-destaque {
     border: 2px solid gold;
-    padding: 8px;
     background-color: #ffff42;
 }
