@@ -28,7 +28,6 @@ ajax/
 ├── index.html              # Página principal
 ├── main.css               # Estilos CSS
 ├── script.js              # Lógica principal da aplicação
-├── ajax-examples.js       # Exemplos educacionais
 └── README.md             # Documentação
 ```
 
